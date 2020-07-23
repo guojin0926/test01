@@ -20,5 +20,6 @@ from guojin import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('guojin/', views.guojin, name='guojin'),
-    path('user/',include("xuyazhen.urls"))  # 引入xuyazhen的模块
+    path('user/',include("xuyazhen.urls")),  # 引入xuyazhen的模块
+    path('renyiyang/',include("renyiyang.urls"))  # 引入renyiyang的模块
 ]
